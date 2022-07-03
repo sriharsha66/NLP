@@ -45,7 +45,7 @@ def predict():
 if __name__ =="__main__":
     app.run(debug=True)
 
-
+##################################
 
 
 from nltk.stem.wordnet import WordNetLemmatizer
@@ -150,20 +150,4 @@ classifier = NaiveBayesClassifier.train(train_data)
 
 print("Accuracy is:", classify.accuracy(classifier, test_data))
 
-# print(classifier.show_most_informative_features(20))
-# f = open("model.pkl","wb")
-# pickle.dump(Classifier,f)
-# f.close()
-
-# custom_tweet = str(input())
-# custom_tweet_1 = str(input())
-# custom_tweet_2 = str(input())
-
-# custom_tokens = remove_noise(word_tokenize(custom_tweet))
-# custom_tokens_1 = remove_noise(word_tokenize(custom_tweet_1))
-# custom_tokens_2 = remove_noise(word_tokenize(custom_tweet_2))
-
-# # print(custom_tweet, classifier.classify(dict([token, True] for token in custom_tokens)))
-# # print(custom_tweet_1, classifier.classify(dict([token, True] for token in custom_tokens_1)))
-# # print(custom_tweet_2, classifier.classify(dict([token, True] for token in custom_tokens_2)))
 
